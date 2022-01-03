@@ -11,7 +11,7 @@
   />
 </a>
 <script type="text/javascript">
- Kakao.init('a67d0a82544dabd62d7578a9c028d1ed');
+ Kakao.init('e6160dbad7b2228566461851875b76c8');
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
@@ -21,8 +21,8 @@
         imageUrl:
           'https://postfiles.pstatic.net/MjAyMjAxMDJfMTU4/MDAxNjQxMTE4Mjg0NDkx.ma0agO0p5-8zqbB9KGYqkD0wE7x9x9QUSId9dBtTWnYg.7g40_XFkF1sNAMkTlOgxrod7g0igTTJ1xw3JjHmayMkg.JPEG.1991violet/%EC%83%81%EB%8B%A8%EB%8B%A4%EC%8B%9C.jpg?type=w773',
         link: {
-          mobileWebUrl: 'https://yosubsoobin.quv.kr/',
-          webUrl: 'https://yosubsoobin.quv.kr/',
+          mobileWebUrl: 'https://yosubsoobin2.quv.kr',
+          webUrl: 'https://yosubsoobin2.quv.kr',
         },
       },
       social: {
@@ -34,8 +34,8 @@
         {
           title: '청첩장 바로가기',
           link: {
-            mobileWebUrl: 'https://yosubsoobin.quv.kr/',
-            webUrl: 'https://yosubsoobin.quv.kr/',
+            mobileWebUrl: 'https://yosubsoobin2.quv.kr',
+            webUrl: 'https://yosubsoobin2.quv.kr',
           },
         },
       ],
