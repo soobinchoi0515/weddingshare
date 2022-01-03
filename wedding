@@ -1,63 +1,47 @@
-Kakao.Link.sendDefault({
-  objectType: 'feed',
-  content: {
-    title: '공유하기',
-    description: '아메리카노, 빵, 케익',
-    imageUrl:
-      'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
-    link: {
-      mobileWebUrl: 'https://developers.kakao.com',
-      androidExecutionParams: 'test',
-    },
-  },
-  itemContent: {
-    profileText: 'Kakao',
-    profileImageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-    titleImageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-    titleImageText: 'Cheese cake',
-    titleImageCategory: 'Cake',
-    items: [
-      {
-        item: 'Cake1',
-        itemOp: '1000원',
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('a67d0a82544dabd62d7578a9c028d1ed');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '임요섭 그리고 최수빈 모바일 청첩장',
+        description: '2022/2/19(토) 오후 12:00',
+        imageUrl:
+          'https://postfiles.pstatic.net/MjAyMjAxMDJfMTU4/MDAxNjQxMTE4Mjg0NDkx.ma0agO0p5-8zqbB9KGYqkD0wE7x9x9QUSId9dBtTWnYg.7g40_XFkF1sNAMkTlOgxrod7g0igTTJ1xw3JjHmayMkg.JPEG.1991violet/%EC%83%81%EB%8B%A8%EB%8B%A4%EC%8B%9C.jpg?type=w773',
+        link: {
+          mobileWebUrl: 'https://yosubsoobin.quv.kr/',
+          webUrl: 'https://yosubsoobin.quv.kr/',
+        },
       },
-      {
-        item: 'Cake2',
-        itemOp: '2000원',
+      social: {
+        likeCount: 99999, //99999가 최대입니다
+        commentCount: 99999, //99999가 최대입니다
+        sharedCount: 99999, //99999가 최대입니다
       },
-      {
-        item: 'Cake3',
-        itemOp: '3000원',
-      },
-      {
-        item: 'Cake4',
-        itemOp: '4000원',
-      },
-      {
-        item: 'Cake5',
-        itemOp: '5000원',
-      },
-    ],
-    sum: '총 결제금액',
-    sumOp: '15000원',
-  },
-  social: {
-    likeCount: 10,
-    commentCount: 20,
-    sharedCount: 30,
-  },
-  buttons: [
-    {
-      title: '웹으로 이동',
-      link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-      },
-    },
-    {
-      title: '앱으로 이동',
-      link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-      },
-    },
-  ]
-});
+      buttons: [
+        {
+          title: '청첩장 바로가기',
+          link: {
+            mobileWebUrl: 'https://yosubsoobin.quv.kr/',
+            webUrl: 'https://yosubsoobin.quv.kr/',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
